@@ -29,9 +29,8 @@ final class freemail
             if ($resource) {
                 while (($line = fgets($resource)) !== false) {
                     // process the line read.
-                    $this->freeList[$line] = '';
+                    $this->freeList[str_replace(["\r", "\n", "\r\n", "\n\r"], '', $line)] = '';
                 }
-
                 fclose($resource);
             }
             $line = null;
