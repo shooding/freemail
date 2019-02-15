@@ -25,7 +25,7 @@ final class freemail
     {
         $this->freeList = [];
         if (file_exists(__DIR__ . '/free_email_provider_domains.txt')) {
-            $resource = fopen(__DIR__ . '/free_email_provider_domains.txt', 'string');
+            $resource = fopen(__DIR__ . '/free_email_provider_domains.txt', 'r');
             if ($resource) {
                 while (($line = fgets($resource)) !== false) {
                     // process the line read.
