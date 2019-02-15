@@ -24,8 +24,8 @@ final class freemail
     private function __construct()
     {
         $this->freeList = [];
-        if (file_exists('free_email_provider_domains.txt')) {
-            $resource = fopen('free_email_provider_domains.txt', 'string');
+        if (file_exists(__DIR__ . '/free_email_provider_domains.txt')) {
+            $resource = fopen(__DIR__ . '/free_email_provider_domains.txt', 'string');
             if ($resource) {
                 while (($line = fgets($resource)) !== false) {
                     // process the line read.
