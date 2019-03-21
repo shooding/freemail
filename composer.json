@@ -12,6 +12,12 @@
             "email": "mark@loftechs.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:leadfrog/freemail.git"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0"
