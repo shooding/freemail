@@ -1,0 +1,24 @@
+{
+    "name": "leadfrog/freemail",
+    "description": "Update txt to include all freemail domains of the world",
+    "type": "library",
+    "authors": [
+        {
+            "name": "shooding",
+            "email": "wcting@loftechs.com"
+        },
+        {
+            "name": "mark",
+            "email": "mark@loftechs.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "FreeMail": "src/"
+        }
+    }
+}

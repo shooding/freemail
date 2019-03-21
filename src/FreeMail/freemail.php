@@ -1,7 +1,6 @@
 <?php
 
-namespace freemail;
-
+namespace FreeMail;
 
 /**
  * Class freemail freemail singleton
@@ -57,6 +56,9 @@ final class freemail
      */
     public static function isFree($input)
     {
+        if (strpos($input, '@')) {
+            $input = substr($input, strpos($input, '@') + 1);
+        }
         self::init();
         return isset(self::$_instance->freeList[$input]);
     }
